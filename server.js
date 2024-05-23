@@ -3,14 +3,11 @@ const json = require('db.json');
 const fs = require('fs');
 
 const PORT = 3001;
-const app = express();
+const app = express()
 
-app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+app.use(express.static('public'));
 
-app.get('public/notes.html')
-
-app.get('public/index.html')
+app.get()
 
 app.post()
 
