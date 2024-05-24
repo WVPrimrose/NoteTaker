@@ -8,14 +8,7 @@ const app = express()
 
 app.use(express.static('public'));
 
-app.get()
-
-app.post()
-
-app.update()
-
-app.delete()
-
+app.use(routes);
 
 app.listen(PORT, () =>
     console.log(`Today I am listening on port ${PORT}.  Blah, blah, blah ...`)
