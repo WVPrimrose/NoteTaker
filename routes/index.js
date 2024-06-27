@@ -5,7 +5,7 @@ router.get('/notes', (req, res) => {
     return notes.html
 })
 
-router.get('*', (req, res) => {
+router.get('/', (req, res) => {
     console.log(`${req.method} requests for index.html.`)
     return index.html
 })
