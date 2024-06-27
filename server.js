@@ -1,5 +1,5 @@
 const express = require('express');
-const json = require('db.json');
+const json = require('db/db.json');
 const routes = require('/routes')
 const fs = require('fs');
 
