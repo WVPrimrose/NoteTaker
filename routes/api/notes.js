@@ -6,9 +6,9 @@ router.get('/', (req, res) => {
     return res.json(`${req.method} sucessfully done!`)
 })
 
-router.get ('/api/notes', (req, res) => {
+router.get ('/notes', (req, res) => {
     console.log(`${req.method} can read the note!`)
-    return 
+    return res.json('Finally done!')
 })
 
 // post request

@@ -10,7 +10,7 @@ const app = express()
 
 app.use(express.static('public'));
 
-app.use('/api', noteRoutes);
+app.use(routes);
 
 app.listen(PORT, () =>
     console.log(`Today I am listening on port ${PORT}.  Blah, blah, blah ...`)
