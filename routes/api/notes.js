@@ -1,6 +1,7 @@
 const router = require('express').Router()
 const notes = require('../../db/db.json')
 const fs = require('fs');
+const uuid = require('../../helpers/uuid.js')
 
 // get requests
 router.get('/', (req, res) => {
@@ -20,9 +21,11 @@ router.post('/notes', (req, res) => {
     const { title, text } = req.body;
     if (title && text) {
         const newNote = {
+            note_id: uuid(),
             title,
             text,
         };
+        const noteString = JSON.stringify(newNote);
     const response = {
         status: 'success',
         body: newNote,
